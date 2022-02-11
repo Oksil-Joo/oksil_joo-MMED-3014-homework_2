@@ -1,12 +1,28 @@
 <?php
 namespace Canines;
 
-use Food;
+use Animal;
 
-class Canine extends Food
+class Canine extends Animal
 {
     /**
      * @var string
      */
     protected $name = 'canine';
+
+    /**
+     * @var string
+     */
+    private $food = ' a cow';
+
+
+    /**
+     * A short message about eating this dessert.
+     * @return string
+    */
+    public function eat(): string
+    {
+        $parentResult = parent::eat();
+        return $parentResult . $this->food . ".";
+    }
 }

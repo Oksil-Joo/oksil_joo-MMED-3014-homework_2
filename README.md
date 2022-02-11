@@ -11,7 +11,7 @@ Create a multi-layer PHP class setup to describe some related data and functiona
 5. Add list additional references/resources used in the README.md file in the GitHub repository.
 
 ### Reference
-+ [PHP function](https://www.php.net/manual/en/functions.user-defined.php)
++ [spl_autoload_register](https://www.php.net/manual/en/function.spl-autoload-register.php)
 
 
 ### Future Plans

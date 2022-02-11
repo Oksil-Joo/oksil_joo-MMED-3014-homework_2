@@ -1,6 +1,6 @@
 <?php
 
-namespace Canine;
+namespace Canines;
 
 class Wolf extends Canine
 {
@@ -9,4 +9,18 @@ class Wolf extends Canine
      */
     protected $name = 'wolf';
 
+    /**
+     * @var string
+     */
+    private $sound = ' howl ';
+
+
+    /**
+     * A short message about eating this dessert.
+     * @return string
+    */
+    public function speak(): string
+    {
+        return $this->name . " cries " . $this->sound;
+    }
 }

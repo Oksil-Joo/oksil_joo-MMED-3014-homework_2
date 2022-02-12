@@ -1,30 +1,43 @@
 <?php
 
-use Birds\Bird;
-use Canines\Canine;
-use Felines\Feline;
-
-class Animals
+class Animal //define class name
 {
     /**
-     * @var Bird
+     * @var string
      */
-    protected $bird;
+    protected $name = 'animal'; //define name
 
     /**
-     * @var Canine
+     * Animal drinks water.
+     * @return string
      */
-    protected $canine;
-
-    /**
-     * @var Feline
-     */
-    protected $feline;
-
-    public function __construct(Bird $bird, Canine $canine, Feline $feline) 
+    public function drink(): string  //drink Method name
     {
-        $this->bird = $bird;
-        $this->canine = $canine;
-        $this->feline = $feline;
+        return $this->name . " drinks water. ";
+    }
+
+    /**
+     * Animal eats
+     * @return string
+     */
+    public function eat(): string //eat Method name
+    {
+        return $this->name . " eats";
+    }
+    /**
+     * Animal speaks
+     * @return string
+     */
+    public function speak(): string //speak Method name
+    {
+        return $this->name . " speaks";
+    }
+    /**
+     * Animal can
+     * @return string
+     */
+    public function move(): string //move Method name
+    {
+        return $this->name . " can";
     }
 }

@@ -4,7 +4,7 @@ use Birds\Bird;
 use Canines\Canine;
 use Felines\Feline;
 
-class All
+class AllAnimals
 {
     /**
      * @var Bird

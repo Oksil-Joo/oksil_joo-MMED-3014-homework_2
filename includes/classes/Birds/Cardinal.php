@@ -1,8 +1,11 @@
 <?php
 namespace Birds;
 
+use Traits\Pets;
+
 class Cardinal extends Bird
 {
+    use Pets;
     /**
      * @var string
      */

@@ -2,8 +2,11 @@
 
 namespace Birds;
 
+use Traits\Pets;
+
 class Parrot extends Bird
 {
+    use Pets;
     /**
      * @var string
      */
@@ -22,5 +25,15 @@ class Parrot extends Bird
     public function speak(): string
     {
         return $this->name . " speaks " . $this->sound;
+    }
+
+
+    /**
+     * Return A short message about tne animal eats seed.
+     * @return string
+     */
+    public function getFoods(): string 
+    {
+        return ' fruits. ';
     }
 }

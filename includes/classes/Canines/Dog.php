@@ -2,8 +2,11 @@
 
 namespace Canines;
 
+use Traits\Pets;
+
 class Dog extends Canine
 {
+    use Pets;
     /**
      * @var string
      */
@@ -36,6 +39,6 @@ class Dog extends Canine
     */
     public function speak(): string
     {
-        return $this->name . " bikes " . $this->sound;
+        return $this->name . " barks " . $this->sound;
     }
 }

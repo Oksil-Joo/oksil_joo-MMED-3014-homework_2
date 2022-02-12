@@ -30,12 +30,9 @@ class Animal
         return $this->name . " speaks";
     }
 
-    public function run(): string
+    public function move(): string
     {
-        return $this->name . " runs well.";
+        return $this->name . " can";
     }
-    public function fly(): string
-    {
-        return $this->name . " flies well.";
-    }
+
 }

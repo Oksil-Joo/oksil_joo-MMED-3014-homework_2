@@ -2,8 +2,11 @@
 
 namespace Felines;
 
+use Traits\Pets;
+
 class HouseCat extends Feline
 {
+    use Pets;
     /**
      * @var string
      */

@@ -30,6 +30,25 @@ class Bird extends Animal
      */
     public function getFoods(): string 
     {
-        return ' seed ';
+        return ' seeds ';
+    }
+
+    public function move(): string
+    {
+        //one way to use get utensils
+        $parentResult = parent::move();
+        $fly = $this->getFlys();
+
+        return $parentResult . $fly;
+
+    }
+
+    /**
+     * Return A short message about tne animal eats seed.
+     * @return string
+     */
+    public function getFlys(): string 
+    {
+        return ' fly well.';
     }
 }

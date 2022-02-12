@@ -1,22 +1,22 @@
 <?php
 
 namespace Canines;
-
-class Wolf extends Canine
+//wolf is in Canines folder
+class Wolf extends Canine //define class name
 {
     /**
      * @var string
      */
-    protected $name = 'wolf';
+    protected $name = 'a wolf'; //define name
 
     /**
      * @var string
      */
-    private $sound = ' howl ';
+    private $sound = ' howl. '; //define sound
 
 
     /**
-     * A short message about eating this dessert.
+     * A short message about wolf cries howl.
      * @return string
     */
     public function speak(): string

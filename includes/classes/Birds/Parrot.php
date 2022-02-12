@@ -1,25 +1,25 @@
 <?php
 
 namespace Birds;
-
+//Parrot is in Birds folder
 use Traits\Pets;
-
-class Parrot extends Bird
+//import class name
+class Parrot extends Bird //define class name
 {
-    use Pets;
+    use Pets; // A short message about This animal is so cute that it is raised as a pet.
     /**
      * @var string
      */
-    protected $name = 'parrot';
+    protected $name = 'A parrot'; //define name
 
             /**
      * @var string
      */
-    private $sound = ' human words or sounds. ';
+    private $sound = ' human words or sounds. '; //define sound
 
 
     /**
-     * A short message about eating this dessert.
+     * A short message about parrot speaks human words or sounds.
      * @return string
     */
     public function speak(): string
@@ -29,11 +29,11 @@ class Parrot extends Bird
 
 
     /**
-     * Return A short message about tne animal eats seed.
+     * Return A short message about parrot eats fruits.
      * @return string
      */
     public function getFoods(): string 
     {
-        return ' fruits. ';
+        return ' fruits. '; //to get $food
     }
 }

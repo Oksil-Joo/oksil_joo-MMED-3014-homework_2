@@ -3,23 +3,23 @@
 use Birds\Bird;
 use Canines\Canine;
 use Felines\Feline;
-
-class AllAnimals
+//Animals are in each folder
+class AllAnimals //define class name
 {
     /**
      * @var Bird
      */
-    protected $bird;
+    protected $bird; //define name
 
     /**
      * @var Canine
      */
-    protected $canine;
+    protected $canine; //define name
 
     /**
      * @var Feline
      */
-    protected $feline;
+    protected $feline; //define name
 
     /**
      * @param Bird
@@ -32,4 +32,5 @@ class AllAnimals
         $this->canine = $canine;
         $this->feline = $feline;
     }
+    //import three different types of animals.
 }

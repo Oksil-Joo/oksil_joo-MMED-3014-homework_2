@@ -1,30 +1,30 @@
 <?php
 
 namespace Felines;
-
+//HouseCat is in Canines folder
 use Traits\Pets;
-
-class HouseCat extends Feline
+//import class name
+class HouseCat extends Feline //define class name
 {
-    use Pets;
+    use Pets; // A short message about This animal is so cute that it is raised as a pet.
     /**
      * @var string
      */
-    protected $name = 'houseCat';
+    protected $name = 'A house cat'; //define name
 
     /**
      * @var string
      */
-    private $food = ' cat food. ';
+    private $food = ' cat food. '; //define food
 
      /**
      * @var string
      */
-    private $sound = ' meow. ';
+    private $sound = ' meow. '; //define sound
 
 
     /**
-     * A short message about eating this dessert.
+     * A short message about houseCat eats cat food.
      * @return string
     */
     public function eat(): string
@@ -33,11 +33,11 @@ class HouseCat extends Feline
     }
 
     /**
-     * A short message about eating this dessert.
+     * A short message about houseCat speaks meow.
      * @return string
     */
     public function speak(): string
     {
-        return $this->name . " sounds " . $this->sound;
+        return $this->name . " speaks " . $this->sound;
     }
 }

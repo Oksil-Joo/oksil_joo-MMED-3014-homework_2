@@ -1,14 +1,14 @@
 <?php
 namespace Birds;
-
+//Brid is in Birds folder
 use Animal;
-
-class Bird extends Animal
+//import class name
+class Bird extends Animal //define class name
 {
     /**
      * @var string
      */
-    protected $name = 'bird';
+    protected $name = 'A bird'; //define name
 
      /**
      * A short message about tne animal eats food.
@@ -16,39 +16,40 @@ class Bird extends Animal
      */
     public function eat(): string
     {
-        //one way to use get utensils
-        $parentResult = parent::eat();
-        $food = $this->getFoods();
+        
+        $parentResult = parent::eat();  //import return of eat methodName in Animal.php
+        $food = $this->getFoods();  //to use get $food
 
-        return $parentResult . $food . ".";
+        return $parentResult . $food . "."; // bird eats seeds.
 
     }
 
     /**
-     * Return A short message about tne animal eats seed.
+     * define getFoods function
      * @return string
      */
     public function getFoods(): string 
     {
-        return ' seeds ';
+        return ' seeds '; // to get $food
     }
 
     public function move(): string
     {
-        //one way to use get utensils
+        //import return of move methodName in Animal.php
         $parentResult = parent::move();
         $fly = $this->getFlys();
 
         return $parentResult . $fly;
+        //result: bird can fly well.
 
     }
 
     /**
-     * Return A short message about tne animal eats seed.
+     * Return A short message about tne bird eats seed.
      * @return string
      */
     public function getFlys(): string 
     {
-        return ' fly well.';
+        return ' fly well.'; // to get $fly
     }
 }

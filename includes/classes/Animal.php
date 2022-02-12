@@ -1,38 +1,43 @@
 <?php
 
-class Animal
+class Animal //define class name
 {
     /**
      * @var string
      */
-    protected $name = 'animal';
+    protected $name = 'animal'; //define name
 
     /**
-     * Animals ate the food.
+     * Animal drinks water.
      * @return string
      */
-    public function drink(): string 
+    public function drink(): string  //drink Method name
     {
         return $this->name . " drinks water. ";
     }
 
     /**
-     * Animals ate the food.
+     * Animal eats
      * @return string
      */
-    public function eat(): string
+    public function eat(): string //eat Method name
     {
         return $this->name . " eats";
     }
-
-    public function speak(): string
+    /**
+     * Animal speaks
+     * @return string
+     */
+    public function speak(): string //speak Method name
     {
         return $this->name . " speaks";
     }
-
-    public function move(): string
+    /**
+     * Animal can
+     * @return string
+     */
+    public function move(): string //move Method name
     {
         return $this->name . " can";
     }
-
 }

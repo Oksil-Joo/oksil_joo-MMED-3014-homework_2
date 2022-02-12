@@ -1,34 +1,38 @@
 <?php
 namespace Canines;
-
+//Canine is in Canines folder
 use Animal;
-
-class Canine extends Animal
+//import class name
+class Canine extends Animal //define class name
 {
     /**
      * @var string
      */
-    protected $name = 'canine';
+    protected $name = 'A canine'; //define name
 
     /**
      * @var string
      */
-    private $food = ' a cow';
+    private $food = ' a cow'; //define food
 
 
     /**
-     * A short message about eating this dessert.
+     * A short message about canine eats a cow.
      * @return string
     */
     public function eat(): string
     {
-        $parentResult = parent::eat();
+        $parentResult = parent::eat(); //import return of eat methodName in Animal.php
         return $parentResult . $this->food . ".";
     }
 
+    /**
+     * A short message about canine can run well.
+     * @return string
+    */
     public function move(): string
     {
-        //one way to use get utensils
+        ////import return of move methodName in Animal.php
         $parentResult = parent::move();
         $run = $this->getRuns();
 
@@ -37,7 +41,7 @@ class Canine extends Animal
     }
 
     /**
-     * Return A short message about tne animal eats seed.
+     * to get $run
      * @return string
      */
     public function getRuns(): string 

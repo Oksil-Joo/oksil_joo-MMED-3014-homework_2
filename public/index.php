@@ -1,5 +1,5 @@
 <?php
-//import files
+//import class name
 use Birds\Bird;
 use Birds\Cardinal;
 use Birds\Parrot;
@@ -18,13 +18,13 @@ spl_autoload_register(function ($class) {
     require_once '../includes/classes/' . $replaced . '.php';
 });
 
-//Method functions
+//animal class
 $animal = new Animal();
 var_dump($animal);
 var_dump($animal->drink());
 var_dump($animal->eat());
 
-//Bird
+//Bird class
 $bird = new Bird();
 $cardinal = new Cardinal();
 $parrot = new Parrot();
@@ -48,7 +48,7 @@ var_dump($parrot->speak());
 var_dump($parrot->move());
 var_dump($parrot->cute());
 
-//Canine
+//Canine class
 $canine = new Canine();
 $dog = new Dog();
 $wolf = new Wolf();
@@ -72,7 +72,7 @@ var_dump($wolf->eat());
 var_dump($wolf->speak());
 var_dump($wolf->move());
 
-//Feline
+//Feline class
 $feline = new Feline();
 $houseCat = new HouseCat();
 $jaguar = new Jaguar();
@@ -103,8 +103,8 @@ var_dump($lion->eat());
 var_dump($lion->speak());
 var_dump($lion->move());
 
-
-$amimal = new Animal($bird, $canine, $feline);
-var_dump($animal);
+//accept three different types of animails.
+$allAmimals = new AllAnimals($bird, $canine, $feline);
+var_dump($allAmimals);
 
 die;

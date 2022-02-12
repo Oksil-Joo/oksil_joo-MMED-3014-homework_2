@@ -7,7 +7,7 @@ class Lion extends Feline //define class name
     /**
      * @var string
      */
-    protected $name = 'lion'; //define name
+    protected $name = 'A lion'; //define name
 
     /**
      * @var string
